@@ -1,0 +1,52 @@
+                             Comandos 
+pwd = Muestra el directorio donde estamos trabajando actualemte
+
+ls = Muestra una lista de los archivos que tenemos dentro de la carpeta
+ ls -l Detalla mas informacion
+
+mkdir Sirve para crear carpetas nuevas
+ mkdir Nombre <--- (es un argumento)
+
+Se puede convinar opciones y argumentos? Si
+ mkdir -v carpeta2 ( esto nos sirve para que la terminal nos confirme que la carpeta se creeo)
+Para poder poner espacios en los nombres de las carpetas ha que usar ""
+ mkdir -v "mi primer carpeta"
+
+cd carpeta1 (sirve para cambiar la carpeta donde estamos trabajando)
+ cd .. (para volver atras)
+
+clear (sirve para limpiar la terminal)
+
+touch archivo1.js (sirve para crear un nuevo archivo, siempre hay que definir la extencion)
+
+rm (elimina el archivo indicado)
+ rm - r (elimina carpeta o directorio indicado)
+
+help (nos muestra todos los comandos)
+ ls --help (nos muestra ayuda del comando indicado)
+  ls -a permite ver carpetas y archivos ocultos
+
+Como acceder a un archivo desde la terminal
+ code "NombreDelArchivo.txt" se abre vs code
+
+                        Comandos git
+
+git status indica el estado del repositorio local
+
+git add "NombreDelArchivo.txt" Sirve para agregar el archivo seleccionado al commit
+ git add . Agrega todos los archivos de la carpeta al commit (Usarlo solo cuando estes seguro de agregar al commit)
+
+git commit guarda un backup del proyecto en el que estamos trabajando
+ git commit -m "Comentario" (sirve para agregar comentarios a los commits)
+
+git log (sirve para saber cuantos y cuales archivos tenemos en el commit actualemte)
+
+git push (Sirve para enviar el commit al repositorio remoto)
+ git push origin main (indica a donde queremos enviar el commit)
+  git push -u origin main
+
+git pull (Sirve para recibir cambios al repositorio local)
+
+git branch -M main ((modifica el nombre de la rama donde estamos trabajando actualmente))
+
+git remote add origin (indica a git que haga un conneccion remota desde nuestro repositorio local)
